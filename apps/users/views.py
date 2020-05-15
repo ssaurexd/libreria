@@ -1,4 +1,4 @@
-from django.shortcuts import render
+""" from django.shortcuts import render
 from django.views.generic.edit import FormView
 from django.views.generic import View
 from django.urls import reverse_lazy, reverse
@@ -116,4 +116,4 @@ class VerificationView(FormView):
 			is_active=True
 		)
 		
-		return super(VerificationView, self).form_valid(form)
+		return super(VerificationView, self).form_valid(form) """

@@ -73,6 +73,9 @@ TEMPLATES = [
     },
 ]
 
+#Users
+AUTH_USER_MODEL = 'users.User'
+
 WSGI_APPLICATION = 'libreria.wsgi.application'
 
 
@@ -108,6 +111,5 @@ USE_L10N = True
 
 USE_TZ = True
 
-#Users
-AUTH_USER_MODEL = 'users.User'
+
 

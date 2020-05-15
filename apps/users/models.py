@@ -13,12 +13,12 @@ class User(AbstractBaseUser, PermissionsMixin):
 	
 	username = models.CharField(max_length=20, unique=True)
 	email = models.EmailField(unique=True)
-	nombre = models.CharField(max_length=30, blank=True)
-	apellidos = models.CharField(max_length=30, blank=True)
-	genero = models.CharField(max_length=1, blank=True, choices=SEXO_CHOICES)
-	codregistro = models.CharField(blank=True, max_length=6)
+	name = models.CharField(max_length=30, blank=True)
+	last_name = models.CharField(max_length=30, blank=True)
+	gender = models.CharField(max_length=1, blank=True, choices=SEXO_CHOICES)
+	code = models.CharField(blank=True, max_length=6)
 	image = models.ImageField(upload_to='users')
-	edad = models.IntegerField(max_length=3)
+	age = models.IntegerField(blank=True, null=True)
 
 	created = models.DateField(auto_now_add=True, auto_now=False)
 	updated = models.DateTimeField(auto_now=True)
