@@ -10,7 +10,7 @@ class BookAdmin(admin.ModelAdmin):
 		'id',
 		'title',
 		'author',
-		'description',
+		'in_home',
 		'price',
 		'discount',
 		'year',

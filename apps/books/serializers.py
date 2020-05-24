@@ -23,6 +23,7 @@ class BookSerializer(serializers.ModelSerializer):
 			'image',
 			'book_cover',
 			'categories',
+			'in_home',
 		)
 
 

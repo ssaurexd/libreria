@@ -10,10 +10,20 @@ from .serializers import BookSerializer, PaginationBookSerializer
 class BookListApiView(ListAPIView):
 
 	serializer_class = BookSerializer
-	pagination_class = PaginationBookSerializer
 
 	def get_queryset(self):
 		return Book.objects.all() 
+
+
+class BookByCategoryListApiView(ListAPIView):
+
+	serializer_class = BookSerializer
+
+	def get_queryset(self):
+
+		category = self.request.GET.get('category')
+
+		return Book.objects.by_category(category)
 
 
 class BookDetailApiView(RetrieveAPIView):
