@@ -2,6 +2,8 @@
 from django.shortcuts import render
 #
 from rest_framework.generics import ListAPIView, RetrieveAPIView
+from rest_framework.decorators import permission_classes
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 #
 from .models import Book
 from .serializers import BookSerializer, PaginationBookSerializer
@@ -10,6 +12,7 @@ from .serializers import BookSerializer, PaginationBookSerializer
 class BookListApiView(ListAPIView):
 
 	serializer_class = BookSerializer
+	permission_classes = [IsAuthenticatedOrReadOnly]
 
 	def get_queryset(self):
 		return Book.objects.all() 
@@ -18,6 +21,7 @@ class BookListApiView(ListAPIView):
 class BookByCategoryListApiView(ListAPIView):
 
 	serializer_class = BookSerializer
+	permission_classes = [IsAuthenticatedOrReadOnly]
 
 	def get_queryset(self):
 
@@ -29,10 +33,19 @@ class BookByCategoryListApiView(ListAPIView):
 class BookDetailApiView(RetrieveAPIView):
 
 	serializer_class = BookSerializer
+	permission_classes = [IsAuthenticatedOrReadOnly]
+	queryset = Book.objects.all()
+
+
+class BookSearchApiView(ListAPIView):
+
+	serializer_class = BookSerializer
+	permission_classes = [IsAuthenticatedOrReadOnly]
 	
 	def get_queryset(self):
 
-		pk = self.kwargs['pk']
+		libro = self.request.GET.get('title')
 
-		return Book.objects.filter(id=pk)
-	
+		queryset = Book.objects.by_title(libro)
+
+		return queryset

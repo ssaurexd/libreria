@@ -1,0 +1,5 @@
+{
+	"python.pythonPath": "/home/sanji/Documentos/Venv/d3-libreria/bin/python3",
+	"python.linting.pylintEnabled": true,
+	"python.linting.enabled": true
+}

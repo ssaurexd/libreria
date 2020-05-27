@@ -1,0 +1,766 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "users",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "books",
+    "model": "book"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "categories",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "wishlist",
+    "model": "wishlist"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "authtoken",
+    "model": "token"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "sites",
+    "model": "site"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "allauth",
+    "model": "socialapp"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "allauth",
+    "model": "socialaccount"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "allauth",
+    "model": "socialtoken"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "account",
+    "model": "emailaddress"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "account",
+    "model": "emailconfirmation"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "898et0yxtctxksp58h55kzn6kj763kfe",
+  "fields": {
+    "session_data": "NWU2YmNhYTE4MzdmYzQ4NjcwZTgwNmU2YWNkYzBjNTZiMjA4NjkwMTp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyOWJkMzM4YWNlMTk5NzhiMGMwNWY4MmYwYTc3OGZlMGM1M2I1M2U2In0=",
+    "expire_date": "2020-06-08T20:09:49.199Z"
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "example.com",
+    "name": "example.com"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 1,
+  "fields": {
+    "title": "En las monta\u00f1as de la locura",
+    "author": "HP Lovecraft",
+    "price": 192.0,
+    "discount": 0.0,
+    "description": "El escritor H.P Lovercaft public\u00f3 un relato de una expedici\u00f3n enviada por la universidad del Miskatonic, en 1929, a explorar la Ant\u00e1rtida. Descubrieron f\u00f3siles de un valor incalculable, enviaron informes sobre una misteriosa cordillera cuya altitud compet\u00eda con la de los picos m\u00e1s altos del Himalaya. Dos hombres cruzaron las monta\u00f1as en busca de alguien desaparecido; cuando regresaron estaban severamente trastornados y uno sufr\u00eda una grave locura. En una meseta diab\u00f3licamente primitiva de m\u00e1s de veinte mil pies de altura, y en un clima letal para la vida, una masa de rocas regulares se extend\u00eda hasta donde alcanzaba la vista, s\u00f3lo en la desesperaci\u00f3n de la autodefensa mental no lleg\u00e1bamos a atribuirla a una causa consciente y artificial. Los habitantes de este yermo, ocultos en la blancura, no est\u00e1n muertos: esperan ser despertados...",
+    "rate": 5,
+    "year": "2013-01-01",
+    "editorial": "Fontamara",
+    "image": "books/LovecraftHP_FeaturedImage.jpg",
+    "book_cover": "books/image_1165_1_95000.jpg",
+    "in_home": false,
+    "created": "2020-05-14",
+    "updated": "2020-05-21T15:28:23.320Z",
+    "categories": [
+      2,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 2,
+  "fields": {
+    "title": "Hombres buenos",
+    "author": "Arturo Perez Reverte",
+    "price": 262.65,
+    "discount": 0.0,
+    "description": "En Espa\u00f1a, en tiempos de oscuridad, siempre hubo hombres buenos que, orientados por la Raz\u00f3n, lucharon por traer a sus compatriotas las luces y el progreso. Y no faltaron quienes intentaban impedirlo.\u00bb Arturo P\u00e9rez-Reverte A finales del siglo XVIII, cuando dos miembros de la Real Academia Espa\u00f1ola, el bibliotecario don Herm\u00f3genes Molina y el almirante don Pedro Z\u00e1rate, recibieron de sus compa\u00f1eros el encargo de viajar a Par\u00eds para conseguir de forma casi clandestina los 28 vol\u00famenes de la Encyclop\u00e9die de D\u0092Alembert y Diderot, que estaba prohibida en Espa\u00f1a, nadie pod\u00eda sospechar que los dos acad\u00e9micos iban a enfrentarse a una peligrosa sucesi\u00f3n de intrigas, a un viaje de incertidumbres y sobresaltos que los llevar\u00eda, por caminos infestados de bandoleros e inc\u00f3modas ventas y posadas, desde el Madrid ilustrado de Carlos III al Par\u00eds de los caf\u00e9s, los salones, las tertulias filos\u00f3ficas, la vida libertina y las agitaciones pol\u00edticas en v\u00edsperas de la Revoluci\u00f3n francesa. Basada en hechos y personajes reales, documentada con extremo rigor, conmovedora y fascinante en cada p\u00e1gina, Hombres buenos narra la heroica aventura de quienes, orientados por las luces de la Raz\u00f3n, quisieron cambiar el mundo con libros, cuando el futuro arrinconaba las viejas ideas y el ansia de libertad hac\u00eda tambalearse tronos y mundos establecidos.",
+    "rate": 5,
+    "year": "2015-05-21",
+    "editorial": "Alfaguara",
+    "image": "books/hombres_buenos.jpg",
+    "book_cover": "books/hombresbuenobc.JPG",
+    "in_home": false,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T15:34:15.671Z",
+    "categories": [
+      3,
+      5,
+      8
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 3,
+  "fields": {
+    "title": "Animales",
+    "author": "Hebe Uart",
+    "price": 312.0,
+    "discount": 0.0,
+    "description": "\"Yo no recuerdo haber insultado invocando a los animales; los han convocado a todos para insultar. 'Perro' est\u00e1 en la Il\u00edada: 'Ojos de perro', dicen. 'El caballo' le dec\u00edan a una compa\u00f1era en sexto grado; 'Gato', a las prostis, y 'Vaca', a las gordas. Me identifico con Felisberto Hern\u00e1ndez, que dice en su cuento '\u00darsula': '\u00darsula era gorda como una vaca y a m\u00ed me gustaba que fuera as\u00ed'. Se necesita valent\u00eda en el R\u00edo de la Plata para decir eso. 'Lengua de v\u00edbora' es otro insulto; 'Buitre', tambi\u00e9n. El tigre, el le\u00f3n y la oveja tienen buena prensa. Me gustan mucho los dichos camperos de la provincia de Buenos Aires, en los que cada situaci\u00f3n, habilidad o deficiencia es ilustrada con un animal. Para la monoton\u00eda: 'Siempre igual, como cara de oveja'. Para la formalidad: 'Formal, como burro en corral'. Para la desconfianza: 'M\u00e1s desconfiao que caballo tuerto'. Para el que habla de algo que desconoce: 'Qu\u00e9 sabe el burro 'e confites, si nunca fue confitero'. Para la gente que saluda a todo el mundo en los pueblos: 'Saludador como tero' (el tero hace un movimiento de cabeza). Mi pap\u00e1 contaba que los viejos vascos del campo ten\u00edan apodos de animales: 'Cebruno', 'Overo', 'Malacara'.\" Fragmento de \"Mi historia con los animales\", incluido en este libro.",
+    "rate": 5,
+    "year": "2017-05-21",
+    "editorial": "Adriana Hidalgo Edit",
+    "image": "books/animales.jpg",
+    "book_cover": "books/animalesbc.JPG",
+    "in_home": false,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T15:37:45.151Z",
+    "categories": [
+      3
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 4,
+  "fields": {
+    "title": "Malasangre",
+    "author": "Michelle Roche Rodriguez",
+    "price": 380.0,
+    "discount": 0.0,
+    "description": "Venezuela, a\u00f1o 1921. Diana, la hija de catorce a\u00f1os de una familia de arribistas de Caracas, descubre que ha heredado la hematofagia de su padre, prestamista y hacendado, ocupaciones que desempe\u00f1a gracias a su relaci\u00f3n con la dictadura de turno. La enfermedad la inclina a la violencia contra algunos hombres y la aleja de su madre, de estrictas convicciones cat\u00f3licas. Mientras madura, Diana se enfrentar\u00e1 al maltrato del novio con el que se empe\u00f1an en casarla, a la brutalidad de su familia y a la tiran\u00eda del patriarcado militarista y religioso. Sin embargo, lo peor ser\u00e1 verse involucrada en las actividades \u00a1l\u00edcitas y las conspiraciones pol\u00edticas de los socios de su padre, que la llevar\u00e1n hasta las rec\u00e1maras privadas del palacio presidencial.",
+    "rate": 5,
+    "year": "2020-05-21",
+    "editorial": "Anagrama",
+    "image": "books/malasangre.jpg",
+    "book_cover": "books/malasangrebc.JPG",
+    "in_home": false,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T15:41:21.842Z",
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 5,
+  "fields": {
+    "title": "El proxeneta",
+    "author": "Mabel Lozano",
+    "price": 288.0,
+    "discount": 0.0,
+    "description": "Mabel Lozano revela por primera vez la historia que hay detr\u00e1s del negocio ilegal de la trata de mujeres latinoamericanas para prostituirlas. Lo hace de la mano de un testigo privilegiado, Miguel, apodado el M\u00fasico, un exproxeneta que confiesa c\u00f3mo se inici\u00f3 en este negocio ilegal y relata c\u00f3mo ha evolucionado la prostituci\u00f3n en Espa\u00f1a y en el mundo desde la d\u00e9cada de los noventa hasta la actualidad. El M\u00fasico pas\u00f3 de ser portero de un club nocturno, a los 17 a\u00f1os, a un todopoderoso jefe de la mafia y due\u00f1o de doce de los m\u00e1s grandes prost\u00edbulos de Espa\u00f1a. Fue el capo de una de las redes m\u00e1s organizadas e inescrupulosas de Europa que trafic\u00f3 a m\u00e1s de 1 700 mujeres de Colombia, Brasil, Venezuela y Paraguay \u0097incluidas menores de edad\u0097, para prostituirlas y obtener enormes ganancias. En el proceso de consolidaci\u00f3n de su poder no dud\u00f3 en recurrir a la corrupci\u00f3n, el secuestro, la extorsi\u00f3n, el lavado de dinero y hasta el asesinato.",
+    "rate": 4,
+    "year": "2019-05-21",
+    "editorial": "Planeta",
+    "image": "books/elproxeneta.jpg",
+    "book_cover": "books/elproxenetabc.JPG",
+    "in_home": false,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T15:44:40.656Z",
+    "categories": [
+      1,
+      9
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 6,
+  "fields": {
+    "title": "A la sombra del angel",
+    "author": "Kathryn Blair",
+    "price": 388.0,
+    "discount": 0.0,
+    "description": "Par\u00eds, 1931. Mar\u00eda Antonieta Rivas Mercado se quita la vida en la catedral de Notre Dame con la pistola de su amante, Jos\u00e9 Vasconcelos, mientras \u00e9l la espera para desayunar. Hab\u00eda llegado a Francia con la esperanza de apartarse del torbellino de un M\u00e9xico corrompido tras el fraude electoral de 1929, donde hab\u00eda sido pieza clave para la campa\u00f1a presidencial de Vasconcelos que termin\u00f3 aplastada por Plutarco El\u00edas Calles. A la sombra del \u00e1ngel nos sumerge en la fascinante vida de quien fuera la heredera de uno de los arquitectos m\u00e1s destacados del porfiriato, don Antonio Rivas Mercado: su rom\u00e1ntica infancia rodeada por el arte; su intensa relaci\u00f3n intelectual con Diego Rivera, Carlos Ch\u00e1vez y Xavier Villaurrutia, su importante rol como artista y mecenas de los Contempor\u00e1neos, su temprano matrimonio y tr\u00e1gicos amores. Este cl\u00e1sico de Kathryn S. Blair captura el tormentoso e inspirador mundo interior de una mujer que luch\u00f3 contra su tiempo. El tormentoso e inspirador mundo interior de una mujer que luch\u00f3 contra su tiempo.",
+    "rate": 3,
+    "year": "2018-05-21",
+    "editorial": "Planeta",
+    "image": "books/sombradelanguel.jpg",
+    "book_cover": "books/alasombredelanguelbc.JPG",
+    "in_home": false,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T15:47:41.834Z",
+    "categories": [
+      7,
+      11
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 7,
+  "fields": {
+    "title": "El cali",
+    "author": "ANNA ERISHKIGAL",
+    "price": 91.0,
+    "discount": 0.0,
+    "description": "Elssa McCarthy vive en la Ciudad del Califato, la cual est\u00e1 bajo el control del grupo radical isl\u00e1mico de los Ghuraba. Siete a\u00f1os atr\u00e1s, el general Mohammad bin-Rasulullah derrot\u00f3 a Estados Unidos mediante una despiadada traici\u00f3n y estableci\u00f3 su Califato mundial en las ruinas de Washington, D.C. El l\u00edder supremo de los Ghuraba, el Abu al-Ghuraba, afirma que el padre de Eisa le dio el control del arsenal nuclear de los EE.UU., una afirmaci\u00f3n reforzada por las cenizas ardientes de muchas ciudades y el testimonio de su madre siria. Sin embargo, despu\u00e9s de que su madre es acusada de apostas\u00eda, Eisa se entera de que su padre puede no ser el \"m\u00e1rtir\" que los Ghuraba afirman.",
+    "rate": 2,
+    "year": "2017-05-21",
+    "editorial": "Seraphim press",
+    "image": "books/elcalifato.jpg",
+    "book_cover": "books/elcalifatobc.jpg",
+    "in_home": false,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T15:51:15.105Z",
+    "categories": [
+      10
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 8,
+  "fields": {
+    "title": "Mujeres peligrosas",
+    "author": "Otto Penzler",
+    "price": 209.25,
+    "discount": 0.0,
+    "description": "Las mujeres m\u00e1s peligrosas son aquellas que resultan irresistibles. \u00bfQu\u00e9 hace peligrosa a una mujer? Su gran belleza, su encanto, su inteligencia, la manera en que se aparta el cabello de los ojos, o el modo de re\u00edrse. Puede tener conciencia absoluta de su poder, o desconocerlo por completo. Utilizarlo como arma o protegerse detr\u00e1s de \u00e9l. La intenci\u00f3n y el prop\u00f3sito no aumentan ni disminuyen el poder, y ese es el mayor peligro de todos los que son seducidos y sometidos por \u00e9l. As\u00ed reflexiona Otto Penzler en la introducci\u00f3n a esta antolog\u00eda \u00fanica, que re\u00fane diecisiete autores estadounidenses notables, algunos de los mejores escritores del g\u00e9nero de misterio y suspenso, que encuentran aqu\u00ed su mejor expresi\u00f3n. Aunque diferentes, cada relato tiene como protagonista a una mujer que resulta letal, no importa si es femme fatale, seductora o de apariencia inocente. Los escenarios y los tiempos var\u00edan: marcha nocturna desenfrenada por bares y clubes de Par\u00eds, Vietnam, la costa oeste estadounidense despu\u00e9s de la Primera Guerra Mundial, bares de la d\u00e9cada del cincuenta... Mentira, manipulaci\u00f3n, seducci\u00f3n, horror, asesinato, suicidio, nada queda fuera de estas maravillosas historias.",
+    "rate": 5,
+    "year": "2013-05-21",
+    "editorial": "Hiperlibro",
+    "image": "books/mujerespeligrosas.jpg",
+    "book_cover": "books/mujerespeligrosasbc.JPG",
+    "in_home": false,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T15:55:16.089Z",
+    "categories": [
+      13
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 9,
+  "fields": {
+    "title": "Suspenso en la bahia",
+    "author": "Susan Sharpe",
+    "price": 44.0,
+    "discount": 0.0,
+    "description": "Desde su escondite, Ben y Marco vieron las luces de unos faros que se dirig\u00edan a la bah\u00eda. Una camioneta se acerc\u00f3 hasta la orilla y de su interior descendieron dos hombres, de la parte de atr\u00e1s descargaron un barril, lo arrojaron al agua y se alejaron r\u00e1pidamente. No nos vieron dijo Ben. Pero nosotros s\u00ed los vimos exclam\u00f3 Marco. V\u00e1monos de aqu\u00ed.",
+    "rate": 3,
+    "year": "1995-05-21",
+    "editorial": "Fondo de cultura",
+    "image": "books/suspensoenlabahia.jpg",
+    "book_cover": "books/suspensoenlabahiabc.JPG",
+    "in_home": false,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T15:58:43.947Z",
+    "categories": [
+      10
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 10,
+  "fields": {
+    "title": "Amenrican noir",
+    "author": "James Pellzir",
+    "price": 306.0,
+    "discount": 0.0,
+    "description": "De entre todos los reto\u00f1os que brotaron de la ficci\u00f3n hard-boiled, el g\u00e9nero negro es el m\u00e1s escrupulosamente estudiado. La fascinaci\u00f3n de lo negro est\u00e1 en la fuerza de la renuncia moral y de la entrega a la excitaci\u00f3n. La importancia social de lo negro radica en su capacidad para fundarse sobre los grandes temas de raza, clase, g\u00e9nero y corrupci\u00f3n sist\u00e9mica. El j\u00fabilo dominante y el atractivo definitivo de lo negro consisten en hacer de la condena una diversi\u00f3n. Lo negro no va a morir: nos brinda un divertimiento demasiado demencial para no florecer en las mentes de los escritores modernos que desear\u00edan viajar en el tiempo para llegara 1948 y vivir el malestar general y la psicosis de la posguerra. Los relatos de este volumen son una gozada. Ponga a trabajar su malsana curiosidad y l\u00e9alos todos. Encontrar\u00e1 repulsi\u00f3n y atracci\u00f3n. -James Ellroy",
+    "rate": 4,
+    "year": "2014-05-21",
+    "editorial": "Novana",
+    "image": "books/ameriaconnoir.jpg",
+    "book_cover": "books/ameriaconnoirbc.JPG",
+    "in_home": false,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T16:01:29.206Z",
+    "categories": [
+      10
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 11,
+  "fields": {
+    "title": "Barcelonoa negra",
+    "author": "Andreu Martin",
+    "price": 416.25,
+    "discount": 0.0,
+    "description": "La poblaci\u00f3n urbana mundial es mayor que la poblaci\u00f3n rural y tal vez el \"premio\" por esta supremac\u00eda sea la soledad en medio de la multitud. \u00bfEl infierno ser\u00e1 el otro, como predicaba Sartre? Cada ciudad late al ritmo de las ambiciones, deseos y temores de sus habitantes, y estos, como caudal sangu\u00edneo, circulan por sus calles y sus avenidas con su carga de desamor, con sus ansias de venganza, con su desesperaci\u00f3n, en busca de algo que no saben si podr\u00e1n encontrar y que con frecuencia no saben qu\u00e9 es, pero que resultar\u00e1 distinto y muchas veces fatal. V\u00edctimas y victimarios que se desplazan hacia un encuentro, esperado o inesperado, pero que intuyen modificar\u00e1 el curso de sus vidas. Mecanismos cuya fatal predeterminaci\u00f3n solo se desvela cuando ya es tarde para intentar un cambio. He aqu\u00ed lo negro literario, entendido como aquello que nos inquieta, nos perturba, nos amenaza...",
+    "rate": 4,
+    "year": "2016-05-21",
+    "editorial": "Siruela",
+    "image": "books/barcelonanegra.jpg",
+    "book_cover": "books/barcelonanegrabc.JPG",
+    "in_home": false,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T16:03:51.862Z",
+    "categories": [
+      10
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 12,
+  "fields": {
+    "title": "Comunicaci\u00f3n y superaci\u00f3n personal",
+    "author": "Mauro Rodriguez",
+    "price": 266.0,
+    "discount": 0.0,
+    "description": "Estudiantes de licenciatura en psicolog\u00eda, capacitadores, psic\u00f3logos y todo profesional del \u00e1rea industrial interesado en el tema.",
+    "rate": 3,
+    "year": "2020-05-21",
+    "editorial": "El manual moderno",
+    "image": "books/comunicaci\u00f3n-.jpg",
+    "book_cover": "books/comunicacionysuperacionbc.JPG",
+    "in_home": false,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T16:07:43.506Z",
+    "categories": [
+      17
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 13,
+  "fields": {
+    "title": "Terapia cognitiva para la superacion de retos",
+    "author": "Juthid Beck",
+    "price": 810.0,
+    "discount": 0.0,
+    "description": "...",
+    "rate": 5,
+    "year": "2017-05-21",
+    "editorial": "Gedisa",
+    "image": "books/comunicaci\u00f3n-_0ArOY5e.jpg",
+    "book_cover": "books/terapiabc.JPG",
+    "in_home": false,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T16:13:15.850Z",
+    "categories": [
+      17
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 14,
+  "fields": {
+    "title": "La vida invisible",
+    "author": "Lorenzo Amuri",
+    "price": 355.0,
+    "discount": 0.0,
+    "description": "Lorenzo tiene veintis\u00e9is a\u00f1os y toca la guitarra en un grupo de m\u00fasica. Sexo, drogas y rock and roll: ese es el lema de su vida hasta que un d\u00eda, mientras esqu\u00eda, sufre un accidente y queda paralizado del cuello para abajo. Desde ese momento, empieza una larga convalecencia para su cuerpo y tambi\u00e9n para su alma: primero en un hospital italiano; luego en una cl\u00ednica suiza, donde solo espera recuperar la movilidad de las manos para volver a tocar su preciada guitarra, algo que pronto se revelar\u00e1 imposible; y, finalmente, en casa de sus padres, en Roma, donde se encierra en s\u00ed mismo y se hunde en la autocompasi\u00f3n. Cuando su novia, que ha estado a su lado cuid\u00e1ndolo y apoy\u00e1ndolo durante ese terrible a\u00f1o, lo deja, Lorenzo decide suicidarse. Hasta que algo vuelve a insuflarle las ganas de vivir.",
+    "rate": 5,
+    "year": "2018-05-21",
+    "editorial": "Atico de libros",
+    "image": "books/vidainvisible.jpg",
+    "book_cover": "books/lavidainvisiblebc.JPG",
+    "in_home": true,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T16:15:52.316Z",
+    "categories": [
+      17
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 15,
+  "fields": {
+    "title": "Pobreza y modelos de intervencion. aportes para la",
+    "author": "Ana Arias",
+    "price": 424.0,
+    "discount": 0.0,
+    "description": "Este es un libro que parte del supuesto de que es posible encontrar formas superadoras de las intervenciones que la sociedad ha construido sobre la pobreza como problema social. En tanto que las intervenciones sociales son formas hist\u00f3ricas, busca claves en la historia argentina que den cuenta de la construcci\u00f3n de lo que para la autora se denomina el modelo de intervenci\u00f3n de asistencia y promoci\u00f3n, modelo que ha normado las intervenciones sobre la pobreza desde el desarrollismo en adelante y que actualmente se encuentra en crisis. La crisis que identifica en este modelo refiere a los elementos que seg\u00fan la autora directamente interpelan al n\u00facleo de ideas y pr\u00e1cticas que lo sostiene: al supuesto por el cual se considera que por medio de un conjunto de intervenciones sobre los sujetos, \u00e9stos cambiar\u00e1n promocion\u00e1ndose y por ende se modificar\u00e1 tambi\u00e9n su situaci\u00f3n de pobreza, mientras que la asistencia ser\u00eda una forma temporaria que debe ser prontamente superada. El texto cierra con un conjunto de interrogantes tendientes a pensar o procesar nuevas formas o por lo menos modificaciones a las actuales formas de relaci\u00f3n social con la pobreza. Lejos de ofrecer pron\u00f3sticos, presenta opciones en clave de propuestas para el estudio y la intervenci\u00f3n en las pol\u00edticas sociales especialmente enfocadas desde las tradiciones del trabajo social argentino.",
+    "rate": 4,
+    "year": "2012-05-21",
+    "editorial": "Espacio editorial",
+    "image": "books/pobreza.jpg",
+    "book_cover": "books/pobrezabc.JPG",
+    "in_home": false,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T16:17:59.080Z",
+    "categories": [
+      17
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 16,
+  "fields": {
+    "title": "Elevaci\u00f3n",
+    "author": "Stephen King",
+    "price": 199.0,
+    "discount": 0.0,
+    "description": "El cuerpo de Scott Carey sufre un extra\u00f1o fen\u00f3meno: pierde peso sin parar pero no se vuelve m\u00e1s delgado; su b\u00e1scula le dice que cada d\u00eda es un poco m\u00e1s ligero, sin importar si lleva o no ropa o qu\u00e9 tan pesada sea \u00e9sta. Castle Rock es una ciudad peque\u00f1a en la que las noticias vuelan y Scott no quiere ser sometido a pruebas y experimentos, as\u00ed que s\u00f3lo conf\u00eda su secreto a su amigo, el doctor Ellis. Sin embargo, el misterio de su ins\u00f3lita enfermedad causar\u00e1 efectos inesperados en la convivencia de la peque\u00f1a ciudad y sacar\u00e1 a la luz lo mejor de la gente que le rodea. King vuelve a Castle Rock con un mensaje para nuestros tiempos. Elevaci\u00f3n es una historia fascinante y conmovedora y un ant\u00eddoto contra nuestra cultura individualista.",
+    "rate": 5,
+    "year": "2020-05-21",
+    "editorial": "Suma de letras",
+    "image": "books/cosmos_universo.jpg",
+    "book_cover": "books/elevacionbc.JPG",
+    "in_home": true,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T16:22:17.937Z",
+    "categories": [
+      11
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 17,
+  "fields": {
+    "title": "Marcada",
+    "author": "Sarah Edmonson",
+    "price": 298.0,
+    "discount": 0.0,
+    "description": "A los ojos de todos, NXIVM era una empresa innovadora sobre desarrollo personal que superaba los est\u00e1ndares: su l\u00edder Keith Raniere recibi\u00f3 del dal\u00e1i lama, en un gran evento, una khata blanca que significa bendici\u00f3n y aprobaci\u00f3n; Emilio Salinas (hijo del expresidente) dirig\u00eda la filial en M\u00e9xico; actrices y actores de Hollywood, as\u00ed como otros personajes mexicanos, se un\u00edan al grupo; sus miembros se mostraban empoderados y listos para prosperar\u0085 La verdad era muy distinta, exist\u00eda un amo y esclavas, mujeres marcadas con las iniciales KR, extorsionadas, grabadas desnudas, con sus datos personales y financieros retenidos, ya sin v\u00ednculos con el mundo exterior y que tem\u00edan por su vida. NXIVM era una secta sexual millonaria: un negocio de esclavitud moderna.",
+    "rate": 5,
+    "year": "2020-05-21",
+    "editorial": "Planeta",
+    "image": "books/marcada.jpeg",
+    "book_cover": "books/marcadabc.JPG",
+    "in_home": true,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T16:26:03.449Z",
+    "categories": [
+      11
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 18,
+  "fields": {
+    "title": "El ultimo deseo",
+    "author": "Maurico Pidal",
+    "price": 355.0,
+    "discount": 0.0,
+    "description": "Geralt de Rivia, brujo y mutante sobrehumano, se gana la vida como cazador de monstruos en una tierra de magia y maravilla: con sus dos espadas al hombro -la de acero para hombres, y la de plata para bestias- da cuenta de estriges, mant\u00edcoras, grifos, vampiros, quimeras y lobisomes, pero s\u00f3lo cuando amenazan la paz. Ir\u00f3nico, c\u00ednico, descre\u00eddo y siempre errante, sus pasos lo llevan de pueblo en pueblo ofreciendo sus servicios, hallando las m\u00e1s de las veces que los aut\u00e9nticos monstruos se esconden bajo rostros humanos. En su camino sortear\u00e1 intrigas, elegir\u00e1 el mal menor, debatir\u00e1 cuestiones de precio, hollar\u00e1 el conf\u00edn del mundo y realizar\u00e1 su \u00faltimo deseo: as\u00ed comienzan las aventuras del brujo Geralt de Rivia. Andrzej Sapkowski es el gran renovador de la literatura fant\u00e1stica de nuestros tiempos, un genio del lenguaje y la caracterizaci\u00f3n cuya prosa ya ha hechizado a millones de lectores en todo el mundo.",
+    "rate": 4,
+    "year": "2019-05-21",
+    "editorial": "Alamut",
+    "image": "",
+    "book_cover": "books/ultimodeseobc.JPG",
+    "in_home": false,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T16:32:00.071Z",
+    "categories": [
+      11
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 19,
+  "fields": {
+    "title": "El reino vacio",
+    "author": "Kira Jane",
+    "price": 343.0,
+    "discount": 0.0,
+    "description": "S.T. tiene la vida que cualquier cuervo dom\u00e9stico desear\u00eda: convive con su due\u00f1o, Big Jim; disfruta del cari\u00f1o de Dennis, un leal y tonto perro; ve documentales desde un c\u00f3modo sill\u00f3n y, cuando se aburre, intercambia insultos con otros cuervos, pero sobre todo, disfruta de la mejor comida que la especie humana puede ofrecer: los Cheetos. Sin embargo, todo se viene abajo una apacible tarde de verano cuando el ojo de Big Jim sale rodando de su rostro. A pesar de probar todos los remedios que conoce -desde cerveza artesanal hasta un coctel de medicamentos-, S.T. no consigue que Jim se recupere. Entonces se ve obligado a abandonar el dulce hogar en compa\u00f1\u00eda de su fiel amigo Dennis para hallar una cura, pero lo que encuentran es una ciudad destruida donde los hombres se devoran unos a otros. La humanidad tiene un nuevo h\u00e9roe apocal\u00edptico, un malhablado cuervo amante de la comida chatarra que emprender\u00e1 la aventura de su vida para recuperar el mundo que tanto quiere. El reino vac\u00edo es una novela llena de peligros inesperados, tel\u00e9fonos inteligentes, fake news y mucho humor. Una f\u00e1bula extraordinaria sobre la naturaleza y un mundo que, despu\u00e9s de todo, vale la pena salvar.",
+    "rate": 3,
+    "year": "2020-05-21",
+    "editorial": "Planeta",
+    "image": "",
+    "book_cover": "books/elreinovaciobc.JPG",
+    "in_home": false,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T16:34:31.790Z",
+    "categories": [
+      11
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 20,
+  "fields": {
+    "title": "Cafe\u00edna",
+    "author": "Azuela Maite",
+    "price": 673.0,
+    "discount": 0.0,
+    "description": "Cecilia sabe que su vida est\u00e1 en peligro, pero no puede detener lo que ha empezado. Su compa\u00f1era Luc\u00eda est\u00e1 muerta y ahora ella tiene en su poder las pruebas que involucran a importantes pol\u00edticos en el encubrimiento de una red de pornograf\u00eda infantil, que opera con impunidad en las escuelas de la Ciudad de M\u00e9xico. Inmersa en las cloacas de la pol\u00edtica mexicana, su trabajo en la Comisi\u00f3n de Transparencia parece solo empeorar las cosas, pues la podredumbre toca a todas las esferas del poder y enfrentar al sistema es un acto casi suicida. Cecilia est\u00e1 sola en un mundo donde para sobrevivir no solo debe estar dispuesta a callar, sino a sacrificar los principios que alguna vez crey\u00f3 incuestionables, a poner en duda lo evidente y a debatirse entre lo moralmente correcto y lo sensato, mientras es testigo de c\u00f3mo se desmorona todo a su alrededor.",
+    "rate": 4,
+    "year": "2020-05-21",
+    "editorial": "Emece",
+    "image": "",
+    "book_cover": "books/cafeinabc.JPG",
+    "in_home": false,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T16:36:57.568Z",
+    "categories": [
+      11
+    ]
+  }
+},
+{
+  "model": "books.book",
+  "pk": 21,
+  "fields": {
+    "title": "Los mitos de Cthulu",
+    "author": "HP Lovecraft",
+    "price": 407.0,
+    "discount": 0.0,
+    "description": "\u00bfY si la humanidad fuese una mota insignificante en la vastedad de un cosmos mec\u00e1nico y materialista, totalmente indiferente hacia ella, y poblado de deidades monstruosas? \u00bfY si la capacidad del ser humano para saber si existe un sentido o prop\u00f3sito en la acci\u00f3n de los seres c\u00f3smicos fuese equivalente a la de una ameba para entender los motivos del comportamiento humano? \u00bfY si todos estuvi\u00e9semos ya condenados por un destino tan caprichoso como el que condena a un prodigioso hormiguero a desaparecer bajo la suela de un zapato en un parque? Inquietudes como \u00e9stas son las que dieron lugar a los turbadores relatos con los que H. P. Lovecraft renov\u00f3 el g\u00e9nero del terror. Ya no estamos ante un universo de horrores et\u00e9reos, sino ante un terror palpable que se materializa en: criaturas monstruosas y entes alien\u00edgenas, seres primigenios provenientes de las estrellas o de oscuros rincones de la Tierra, y que acechan nuestro mundo desde antes incluso del inicio de los tiempos.",
+    "rate": 5,
+    "year": "2016-05-21",
+    "editorial": "Biblock",
+    "image": "books/cthulu.jpg",
+    "book_cover": "books/cthulubc.JPG",
+    "in_home": true,
+    "created": "2020-05-21",
+    "updated": "2020-05-21T16:39:13.272Z",
+    "categories": [
+      6
+    ]
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 1,
+  "fields": {
+    "name": "Terror",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:44:21.012Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 2,
+  "fields": {
+    "name": "Ciencia ficci\u00f3n",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:45:20.701Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 3,
+  "fields": {
+    "name": "Novela",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:45:31.607Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 4,
+  "fields": {
+    "name": "Novela gotica",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:45:52.862Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 5,
+  "fields": {
+    "name": "Novela ligera",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:45:59.110Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 6,
+  "fields": {
+    "name": "Terror cosmico",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:47:10.463Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 7,
+  "fields": {
+    "name": "Fantas\u00eda",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:48:49.429Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 8,
+  "fields": {
+    "name": "Aventura",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:48:55.328Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 9,
+  "fields": {
+    "name": "Romance",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:49:22.642Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 10,
+  "fields": {
+    "name": "Suspenso",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:49:31.301Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 11,
+  "fields": {
+    "name": "Thriller",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:49:39.473Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 12,
+  "fields": {
+    "name": "Educaci\u00f3n",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:49:52.023Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 13,
+  "fields": {
+    "name": "Novela policiaca",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:51:26.113Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 14,
+  "fields": {
+    "name": "Drama",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:53:00.094Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 15,
+  "fields": {
+    "name": "Comedia",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:53:04.017Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 16,
+  "fields": {
+    "name": "Tragedia",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:53:16.976Z"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 17,
+  "fields": {
+    "name": "Autosuperaci\u00f3n",
+    "created": "2020-05-14",
+    "updated": "2020-05-14T16:53:34.346Z"
+  }
+}

@@ -20,7 +20,9 @@ from django.urls import path, re_path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #Url apps
+    #rest auth
+    path('rest-auth/', include('rest_auth.urls')),
+    #apps
     re_path('users/', include('apps.users.urls')),
     re_path('wishlist/', include('apps.wishlist.urls')),
     re_path('categories/', include('apps.categories.urls')),

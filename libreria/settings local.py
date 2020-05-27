@@ -3,6 +3,11 @@ from .settings_base import *
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:3000',
+)
+
 ALLOWED_HOSTS = []
 
 DATABASES = {
@@ -18,15 +23,8 @@ DATABASES = {
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-import dj_database_url  
-
-db_from_env = dj_database_url.config(conn_max_age=500)  
-
-DATABASES['default'].update(db_from_env)  
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
 STATIC_URL = '/static/'
 STATICFILES_DIR = os.path.join(BASE_DIR, 'static')
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 #Media
 MEDIA_URL = '/media/'

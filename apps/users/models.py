@@ -13,9 +13,9 @@ class User(AbstractBaseUser, PermissionsMixin):
 	
 	username = models.CharField(max_length=20, unique=True)
 	email = models.EmailField(unique=True)
-	name = models.CharField(max_length=30, blank=True)
-	last_name = models.CharField(max_length=30, blank=True)
-	gender = models.CharField(max_length=1, blank=True, choices=SEXO_CHOICES)
+	name = models.CharField(max_length=30, blank=False)
+	last_name = models.CharField(max_length=30, blank=False)
+	gender = models.CharField(max_length=1, blank=False, choices=SEXO_CHOICES)
 	code = models.CharField(blank=True, max_length=6)
 	image = models.ImageField(upload_to='users')
 	age = models.IntegerField(blank=True, null=True)
@@ -24,7 +24,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 	updated = models.DateTimeField(auto_now=True)
 
 	is_staff = models.BooleanField(default=False)
-	is_active = models.BooleanField(default=False)
+	is_active = models.BooleanField(default=True)
 
 	USERNAME_FIELD = 'username'
 	REQUIRED_FIELDS = ['email',]
