@@ -1,5 +1,6 @@
 #
 from django.shortcuts import render
+from django.db.models import Q
 #
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.decorators import permission_classes
@@ -46,6 +47,8 @@ class BookSearchApiView(ListAPIView):
 
 		libro = self.request.GET.get('title')
 
-		queryset = Book.objects.by_title(libro)
+		queryset = Book.objects.filter(
+			title__icontains=libro
+		).order_by('title')
 
 		return queryset

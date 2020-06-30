@@ -1,6 +1,7 @@
 from django.db import models
 from apps.users.models import User
 from apps.books.models import Book
+from .managers import WishListManager
 
 # Create your models here.
 class WishList(models.Model):
@@ -10,3 +11,5 @@ class WishList(models.Model):
 
 	created = models.DateField(auto_now_add=True, auto_now=False)
 	updated = models.DateTimeField(auto_now=True, auto_now_add=False)
+
+	objects = WishListManager()

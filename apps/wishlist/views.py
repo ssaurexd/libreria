@@ -2,6 +2,7 @@
 from django.shortcuts import render
 #
 from rest_framework.generics import ListAPIView
+from rest_framework.permissions import IsAuthenticated
 #
 from .models import WishList
 from .serializers import WishListSerializer
@@ -10,6 +11,10 @@ from .serializers import WishListSerializer
 class WishListListApiView(ListAPIView):
 
 	serializer_class = WishListSerializer
+	permission_classes = [IsAuthenticated]
 
 	def get_queryset(self):
-		return WishList.objects.all() 
+
+		user = self.request.user
+
+		return WishList.objects.by_user(user=user)
