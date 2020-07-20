@@ -1,7 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
+from django.db.models.signals import post_save
 
 from .managers import UserManager
+from .signals import create_token
 
 # Create your models here.
 class User(AbstractBaseUser, PermissionsMixin):
@@ -36,3 +38,5 @@ class User(AbstractBaseUser, PermissionsMixin):
 
 	def get_full_name(self):
 		return self.nombre + ' ' + self.apellidos
+
+post_save.connect(create_token, sender = User)

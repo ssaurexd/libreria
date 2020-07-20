@@ -2,6 +2,7 @@
 from django.shortcuts import render
 from django.db.models import Q
 #
+from rest_framework.authentication import SessionAuthentication, BasicAuthentication
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.decorators import permission_classes
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
